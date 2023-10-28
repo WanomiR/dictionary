@@ -1,13 +1,7 @@
 from django.shortcuts import render, redirect
 
-words_list = [
-    ["keyboard", "клавиатура"],
-    ["mouse", "мышь"],
-    ["bottle", "бутылка"]
-]
 
-
-WORDS_LIST_PATH = "/Users/ioann/Projects/Dictionary/dictionary/main/words_list.txt"
+WORDS_LIST_PATH = "words_list.txt"
 
 
 def add_to_file(word1: str, word2: str):

@@ -7,12 +7,12 @@
 <section class="add-word">
   <h2 class="add-word__title">Add word</h2>
   <form class="form" method="POST" action="">
+    {% csrf_token %}
     <label for="word1">Original</label>
     <input class="form__input" name="word1" id="word1" type="text">
     <label for="word2">Translation</label>
     <input class="form__input" name="word2" id="word2" type="text">
     <button class=form__submit" type="submit">Submit</button>
-    {% csrf_token %}
   </form>
 </section>
 
